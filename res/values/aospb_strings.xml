@@ -25,4 +25,8 @@
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">Statusbar Icon manager</string>
     <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
+    <!-- One shot automatic brightness -->
+    <string name="auto_brightness_one_shot_title">One shot auto-brightness</string>
+    <string name="auto_brightness_one_shot_summary">Brightness adjustment will only occur at the moment the screen is turned on</string>
 </resources>
