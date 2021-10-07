@@ -30,6 +30,14 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- aospb Version  -->
+    <Preference
+        android:key="aospb_version"
+        android:title="@string/aospb_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.aospbVersionPreferenceController"/>
+
     <!-- aosPB maintainer -->
     <Preference
         android:key="maintainer"

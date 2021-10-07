@@ -118,4 +118,7 @@
     <!-- FastCharge feature -->
     <string name="fast_charging_title">Fast charging</string>
     <string name="fast_charging_summary">Disable to reduce the heat produced by the device while charging or to extend the lifespan of the battery</string>
+
+    <!-- aospb Version -->
+    <string name="aospb_version">aosPB-Project version</string>
 </resources>
