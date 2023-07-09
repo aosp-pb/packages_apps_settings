@@ -50,6 +50,5 @@
         app:layout_constraintTop_toTopOf="@android:id/icon"
         app:layout_constraintBottom_toBottomOf="@android:id/icon"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp" />
+        android:layout_marginEnd="1sp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
