@@ -23,4 +23,7 @@
 
     <!-- Whether to enable Lineage Fast Charge Prefernece -->
     <bool name="config_lineageFastChargeSupported">false</bool>
+    
+    <!-- Show Force LTE_CA toggle -->
+    <bool name="config_showForceLteCaToggle" translatable="false">false</bool>
 </resources>
