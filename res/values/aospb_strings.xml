@@ -1,0 +1,5 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- aospb version in About phone -->
+    <string name="aospb_version_title">aosPB version</string>
+    <string name="aospb_info_default">Unknown</string>
+</resources>

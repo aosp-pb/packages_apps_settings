@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2019 The Android Open Source Project
+ * Copyright (C) 2017 The halogenOS Project
+ * Copyright (C) 2022 The Potato Open Sauce Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,42 +14,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
 import android.os.SystemProperties;
 import android.text.TextUtils;
 
-import androidx.annotation.VisibleForTesting;
-
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class BasebandVersionPreferenceController extends BasePreferenceController {
+public class aospbVersionPreferenceController extends BasePreferenceController {
 
-    @VisibleForTesting
-    static final String BASEBAND_PROPERTY = "gsm.version.baseband";
+    private static final String PROPERTY_AOSPB_VERSION = "ro.custom.version";
 
-    public BasebandVersionPreferenceController(Context context, String preferenceKey) {
-        super(context, preferenceKey);
+    public aospbVersionPreferenceController(Context context, String key) {
+        super(context, key);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return !Utils.isWifiOnly(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_AOSPB_VERSION))) return AVAILABLE;
+        return CONDITIONALLY_UNAVAILABLE;
     }
 
     @Override
     public CharSequence getSummary() {
-        String baseband = SystemProperties.get(BASEBAND_PROPERTY,
-                mContext.getString(R.string.device_info_default));
-        for (String str : baseband.split(",")) {
-            if (!TextUtils.isEmpty(str)) {
-                return str;
-            }
-        }
-        return baseband;
+        return SystemProperties.get(PROPERTY_AOSPB_VERSION);
     }
 }

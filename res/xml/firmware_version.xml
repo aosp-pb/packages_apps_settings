@@ -30,6 +30,14 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+     <!-- aospb Version -->
+     <Preference
+         android:key="modversion"
+         android:title="@string/aospb_version_title"
+         android:summary="@string/aospb_info_default"
+         settings:enableCopying="true"
+         settings:controller="com.android.settings.deviceinfo.firmwareversion.aospbVersionPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
@@ -64,12 +72,12 @@
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
     <!-- Build -->
-    <Preference
+    <!-- <Preference
         android:key="os_build_number"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
 
 </PreferenceScreen>
