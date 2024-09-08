@@ -4,4 +4,10 @@
         android:key="misc_settings"
         android:title="@string/misc_settings_title">
    
+    <!-- Cache Cleaner -->
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="cache_cleaner_enabled"
+        android:title="@string/cache_cleaner_title"
+        android:summary="@string/cache_cleaner_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
