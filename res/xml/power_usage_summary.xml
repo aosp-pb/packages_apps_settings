@@ -38,6 +38,12 @@
         android:title="@string/summary_placeholder"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController" />
 
+    <SwitchPreferenceCompat
+        android:key="battery_percentage"
+        android:title="@string/battery_percentage"
+        android:summary="@string/battery_percentage_description"
+        settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
+
     <Preference
         android:fragment="com.android.settings.fuelgauge.batteryusage.PowerUsageAdvanced"
         android:key="battery_usage_summary"
@@ -64,12 +70,6 @@
         android:title="@string/battery_info"
         settings:controller="com.android.settings.deviceinfo.batteryinfo.BatteryInfoPreferenceController"
         settings:keywords="@string/keywords_battery_info" />
-
-    <SwitchPreferenceCompat
-        android:key="battery_percentage"
-        android:title="@string/battery_percentage"
-        android:summary="@string/battery_percentage_description"
-        settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
     <Preference
         android:key="charging_control"
