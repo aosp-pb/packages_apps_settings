@@ -76,17 +76,17 @@
     <dimen name="preference_icon_foreground_image_inset">12dp</dimen>
 
     <!-- Search bar -->
-    <dimen name="search_bar_margin">16dp</dimen>
-    <dimen name="search_bar_height">52dp</dimen>
-    <dimen name="search_bar_text_size">20sp</dimen>
-    <dimen name="search_bar_corner_radius">28dp</dimen>
-    <dimen name="search_bar_content_inset">56dp</dimen>
-    <dimen name="search_bar_padding_start">4dp</dimen>
-    <dimen name="search_bar_padding_start_two_pane">8dp</dimen>
-    <dimen name="search_bar_padding_end">16dp</dimen>
-    <dimen name="search_bar_padding_end_two_pane">24dp</dimen>
-    <dimen name="search_bar_title_padding_start">-4dp</dimen>
-    <dimen name="search_bar_title_padding_start_regular_two_pane">8dp</dimen>
+    <dimen name="search_bar_margin">25dp</dimen>
+    <dimen name="search_bar_height">40dp</dimen>
+    <dimen name="search_bar_text_size">16sp</dimen>
+    <dimen name="search_bar_corner_radius">20dp</dimen>
+    <dimen name="search_bar_content_inset">48dp</dimen>
+    <dimen name="search_bar_padding_start">2dp</dimen>
+    <dimen name="search_bar_padding_start_two_pane">4dp</dimen>
+    <dimen name="search_bar_padding_end">8dp</dimen>
+    <dimen name="search_bar_padding_end_two_pane">12dp</dimen>
+    <dimen name="search_bar_title_padding_start">0dp</dimen>
+    <dimen name="search_bar_title_padding_start_regular_two_pane">4dp</dimen>
 
     <!-- Avatar -->
     <dimen name="avatar_length">48dp</dimen>
