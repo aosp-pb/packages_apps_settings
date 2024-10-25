@@ -140,14 +140,14 @@
         settings:highlightableMenuKey="@string/menu_key_location"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <!-- <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         android:icon="@drawable/ic_settings_accounts"
         android:key="top_level_accounts"
         android:order="-10"
         android:title="@string/account_dashboard_title"
         settings:highlightableMenuKey="@string/menu_key_accounts"
-        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/> -->
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
