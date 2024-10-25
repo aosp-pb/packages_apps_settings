@@ -104,14 +104,23 @@
         android:title="@string/configure_notification_settings"
         settings:highlightableMenuKey="@string/menu_key_notifications"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <!-- <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.security.SecuritySettings"
         android:icon="@drawable/ic_settings_security_white"
         android:key="top_level_security"
         android:order="-30"
         android:title="@string/security_settings_title"
         settings:highlightableMenuKey="@string/menu_key_security"
-        settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
+        settings:controller="com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController"/> -->
+
+    <com.android.settings.widget.HomepagePreference
+        android:icon="@drawable/ic_settings_safety_center_filled"
+        android:key="top_level_safety_center"
+        android:order="-50"
+        android:title="@string/safety_center_title"
+        android:summary="@string/safety_center_summary"
+        settings:highlightableMenuKey="@string/menu_key_safety_center"
+        settings:controller="com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
