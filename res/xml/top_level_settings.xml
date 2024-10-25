@@ -165,14 +165,14 @@
         android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <!-- <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         android:icon="@drawable/ic_settings_accounts"
         android:key="top_level_accounts"
         android:order="-10"
         android:title="@string/account_dashboard_title_with_passkeys"
         settings:highlightableMenuKey="@string/menu_key_accounts"
-        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/> -->
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
