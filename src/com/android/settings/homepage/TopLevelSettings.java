@@ -306,7 +306,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 preference.setLayoutResource(R.layout.top_level_preference_middle);
             }
             if (key.equals("top_level_wellbeing")){
-                preference.setLayoutResource(R.layout.top_level_preference_top);
+                preference.setLayoutResource(R.layout.top_level_preference_middle);
             }
 	}
     }
