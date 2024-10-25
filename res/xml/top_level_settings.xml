@@ -115,6 +115,15 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
+        android:icon="@drawable/ic_settings_privacy_filled"
+        android:key="top_level_privacy"
+        android:order="-60"
+        android:title="@string/privacy_dashboard_title"
+        settings:highlightableMenuKey="@string/menu_key_privacy"
+        settings:controller="com.android.settings.privacy.TopLevelPrivacyEntryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/ic_settings_privacy"
         android:key="top_level_privacy"
         android:order="-70"
@@ -173,6 +182,16 @@
         android:title="@string/account_dashboard_title_with_passkeys"
         settings:highlightableMenuKey="@string/menu_key_accounts"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/> -->
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.accounts.AccountDashboardFragment"
+        android:icon="@drawable/ic_settings_passwords_filled"
+        android:key="top_level_accounts"
+        android:order="-10"
+        android:title="@string/account_dashboard_title_with_passkeys"
+        settings:highlightableMenuKey="@string/menu_key_accounts"
+        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
