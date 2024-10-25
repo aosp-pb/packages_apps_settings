@@ -18,12 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-	    android:layout_height="match_parent"
-        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:layout_marginStart="50dp"
-        app:layout_constraintStart_toEndOf="@android:id/icon">
+        app:layout_constraintStart_toEndOf="@android:id/icon"
+        app:layout_constraintEnd_toStartOf="@+id/arrowImageView">
 
         <TextView
             android:id="@android:id/title"
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:textColor="?android:attr/textColorPrimary"
             android:singleLine="true"
+            android:ellipsize="end"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -45,3 +47,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="1sp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
