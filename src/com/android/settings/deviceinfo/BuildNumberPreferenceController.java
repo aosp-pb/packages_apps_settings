@@ -68,7 +68,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     private int mDevHitCountdown;
     private boolean mProcessingLastDevHit;
 
-    private static final String PROPERTY_AOSPB_BUILD = "ro.custom.build.id";
+    private static final String PROPERTY_AOSPB_BUILD = "ro.build.id";
 
     public BuildNumberPreferenceController(Context context, String key) {
         super(context, key);
