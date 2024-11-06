@@ -24,7 +24,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.Build;
-import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.text.BidiFormatter;
@@ -68,8 +67,6 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     private int mDevHitCountdown;
     private boolean mProcessingLastDevHit;
 
-    private static final String PROPERTY_AOSPB_BUILD = "ro.build.id";
-
     public BuildNumberPreferenceController(Context context, String key) {
         super(context, key);
         mUm = (UserManager) context.getSystemService(Context.USER_SERVICE);
@@ -83,7 +80,7 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_AOSPB_BUILD);
+        return BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY);
     }
 
     @Override
