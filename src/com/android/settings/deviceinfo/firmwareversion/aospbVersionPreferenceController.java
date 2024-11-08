@@ -13,15 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.SystemProperties;
 import android.text.TextUtils;
-
 import androidx.preference.Preference;
-
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
@@ -29,18 +28,40 @@ public class aospbVersionPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "aospbVersionPreferenceController";
     private static final String ROM_PROPERTY = "ro.custom.showversion";
+    private static final String AOSPB_WEBSITE_URL = "https://github.com/aosp-pb";
 
     public aospbVersionPreferenceController(Context context, String key) {
         super(context, key);
     }
 
+    @Override
     public int getAvailabilityStatus() {
         return AVAILABLE;
     }
 
+    @Override
     public CharSequence getSummary() {
         String rom = SystemProperties.get(ROM_PROPERTY,
                 this.mContext.getString(R.string.device_info_default));
         return rom;
+    }
+
+    @Override
+    public void updateState(Preference preference) {
+        super.updateState(preference);
+
+        // Update the summary on every build
+        String version = SystemProperties.get(ROM_PROPERTY, 
+                this.mContext.getString(R.string.device_info_default));
+        preference.setSummary(version);
+
+        // Listener to open the URL
+        preference.setOnPreferenceClickListener(pref -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(AOSPB_WEBSITE_URL));
+            if (intent.resolveActivity(mContext.getPackageManager()) != null) {
+                mContext.startActivity(intent);
+            }
+            return true;
+        });
     }
 }
