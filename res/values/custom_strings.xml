@@ -135,5 +135,6 @@
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
     <!-- Misc Settings -->
-    <string name="misc_settings_title">Misc</string>
+    <string name="misc_settings_title">Miscellaneous</string>
+    <string name="misc_settings_summary">Collection of some extra features</string>
 </resources>
