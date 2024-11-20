@@ -137,4 +137,8 @@
     <!-- Misc Settings -->
     <string name="misc_settings_title">Miscellaneous</string>
     <string name="misc_settings_summary">Collection of some extra features</string>
+
+    <!-- Battery Custs fragment -->
+    <string name="battery_custs_title">Battery Styles</string>
+    <string name="battery_custs_summary">Change the look and feel of the statusbar battery icon</string>
 </resources>
