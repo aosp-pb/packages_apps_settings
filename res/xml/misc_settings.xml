@@ -12,9 +12,13 @@
         android:fragment="com.android.settings.aospb.misc.batteryCusts" />
 
     <!-- Cache Cleaner -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="cache_cleaner_enabled"
+    <ListPreference
+        android:key="cache_cleaner_interval"
         android:title="@string/cache_cleaner_title"
-        android:summary="@string/cache_cleaner_summary"
-        android:defaultValue="false" />
+        android:summary="Choose how often storage cache should be cleared."
+        android:defaultValue="-1"
+        android:persistent="false"
+        android:entries="@array/cache_cleaner_intervals"
+        android:entryValues="@array/cache_cleaner_interval_values"
+        android:dialogTitle="@string/cache_cleaner_dialog" />
 </PreferenceScreen>
