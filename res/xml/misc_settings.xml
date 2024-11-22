@@ -3,5 +3,12 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="misc_settings"
         android:title="@string/misc_settings_title">
+
+    <!-- Battery Custs -->
+    <Preference
+        android:key="battery_custs"
+        android:title="@string/battery_custs_title"
+        android:summary="@string/battery_custs_summary"
+        android:fragment="com.android.settings.aospb.misc.batteryCusts" />
    
 </PreferenceScreen>
